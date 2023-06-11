@@ -28,4 +28,4 @@ app.get("/api/scorecard/:id", (req, res) => {
   res.send("Your score is...!");
 });
 
-app.listen(port, () => console.log(`Example app listening on port ${port}!`));
+app.listen(port, () => console.log(`Listening on port ${port}!`));
