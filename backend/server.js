@@ -1,9 +1,14 @@
 import express from "express";
 import { addFrame } from "./frame/frame.js";
+import cors from "cors";
+
 const app = express();
 const port = 5000;
+
 // add json middleware
 app.use(express.json());
+// add cors middleware
+app.use(cors());
 
 app.get("/", (req, res) => res.send("Hello World!"));
 
